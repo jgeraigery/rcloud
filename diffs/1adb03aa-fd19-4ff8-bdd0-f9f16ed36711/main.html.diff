@@ -1,0 +1,9 @@
+ <html>
+   <head>
++      var params = new URLSearchParams(window.location.search);
+     <script>
+-      window.location = "/edit.html" + window.location.search;
++      window.location = "/edit.html?" + params.toString();
+     </script>
+   </head>
+ </html>
